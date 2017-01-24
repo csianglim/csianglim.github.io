@@ -160,16 +160,16 @@
 
   $(window).load(function(){
 
-    // When accessing publication index, enable filtering.
-    if ($('.pub-filters-select')) {
-      filter_publications();
+    // // When accessing publication index, enable filtering.
+    // if ($('.pub-filters-select')) {
+    //   filter_publications();
 
-      // Useful for changing hash manually (e.g. in development):
-      // window.addEventListener('hashchange', filter_publications, false);
-    }
+    //   // Useful for changing hash manually (e.g. in development):
+    //   // window.addEventListener('hashchange', filter_publications, false);
+    // }
 
     // Enable smooth scrolling with mouse wheel
-    smoothScroll(1.3, 220);
+    // smoothScroll(1.3, 220);
 
     // When accessing homepage from another page and `#top` hash is set, show top of page (no hash).
     if (window.location.hash == "#top") {
