@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://pubnub.github.io/eon/v/eon/1.0.0/eon.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://pubnub.github.io/eon/v/eon/1.0.0/eon.css"/>
+  </head>
+  <body>
+  	<h1> Beer Sensor </h1>
+    <div id="chart"></div>
+    <script>
+      var pubnub = new PubNub({
+		  subscribeKey: 'sub-c-f623339e-587d-11e7-9c9f-02ee2ddab7fe'
+		});
+		eon.chart({
+		  channels: ['sensor'],
+		  history: true,
+		  flow: true,
+		  pubnub: pubnub,
+		  limit: 100,
+		  generate: {
+		    bindto: '#chart',
+		    data: {
+		      labels: false
+		    }
+		  },
+		  transform: function(m) {
+            return {
+                eon: {
+                    'LDR0': m.data.ldr0, 
+                    'LDR1': m.data.ldr1, 
+                    'LDR2': m.data.ldr2, 
+                    'LDR3': m.data.ldr3, 
+                }
+            }
+          }		  
+		});
+    </script>
+  </body>
+</html>
+
