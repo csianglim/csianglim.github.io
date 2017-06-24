@@ -2,11 +2,49 @@
   <head>
     <script type="text/javascript" src="https://pubnub.github.io/eon/v/eon/1.0.0/eon.js"></script>
     <link type="text/css" rel="stylesheet" href="https://pubnub.github.io/eon/v/eon/1.0.0/eon.css"/>
+
+  	<style>
+  	.c3-axis {
+  		font-size: 12px;
+  	}
+
+  	.c3-line{
+  		stroke-width: 5px;
+  	}
+
+  	</style>
+
   </head>
   <body>
+  	<script src="http://cdn.pubnub.com/pubnub-3.16.5.min.js"></script>
+  	<script>
+	var pubnub = PUBNUB.init({
+	    subscribe_key: 'sub-c-f623339e-587d-11e7-9c9f-02ee2ddab7fe',
+	    error: function (error) {
+	        console.log('Error:', error);
+	    }
+	});	
+	pubnub.subscribe({
+	    channel : 'sensor',
+	    message : function(m){
+	        document.getElementById("ldr1_val").innerHTML = m['data']['ldr1'];
+	    },
+	    error : function (error) {
+	        // Handle error here
+	        console.log(JSON.stringify(error));
+	    }
+	});	
+
+
+  	</script>
+
+
+
   	<h1> Beer Sensor </h1>
+  	<h2> LDR1 Value: <span id="ldr1_val"></span></h2>
     <div id="chart"></div>
-    <script>
+
+    <script type="text/javascript">
       var pubnub = new PubNub({
 		  subscribeKey: 'sub-c-f623339e-587d-11e7-9c9f-02ee2ddab7fe'
 		});
