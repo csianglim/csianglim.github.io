@@ -1,0 +1,26 @@
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }} | www.siang.ca {% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="{{ '/assets/css/normalize.css' | prepend: site.baseurl }}" >
+  <link rel="stylesheet" href="{{ '/assets/css/skeleton.css' | prepend: site.baseurl }}" >
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | prepend: site.baseurl }}" >
+
+  <!--  <link rel="icon" type="image/x-icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" /> -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-87463818-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-87463818-1');
+  </script>
+  
+</head>
