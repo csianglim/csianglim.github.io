@@ -6,4 +6,4 @@ permalink: /cv/
 
 #### CV
 
-Coming soon
+CV available at [https://csianglim.github.io/markdown-cv](https://csianglim.github.io/markdown-cv).
