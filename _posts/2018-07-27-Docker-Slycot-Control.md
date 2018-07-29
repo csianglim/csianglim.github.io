@@ -70,7 +70,7 @@ CMD ["app.py"]
 ```
 
 # Docker Hub
-This Docker container is also available in this [GitHub repo](https://github.com/csianglim/alpine-slycot-control).
+This Docker container is also available in this [GitHub repo](https://github.com/csianglim/alpine-slycot-control) or this [DockerHub repo](https://hub.docker.com/r/csianglim/alpine-slycot-control/).
 
 Alternatively, use Docker pull:
 
@@ -85,10 +85,9 @@ docker run csianglim/alpine-slycot-control
 ```
 
 
-
-
 # Other known issues
 FYI Slycot seems to be really fussy about its dependencies, especially numpy versions. I tried using [abn/scipy-docker-alpine](https://github.com/abn/scipy-docker-alpine) as my base image to avoid compiling numpy, scipy and speed up my Docker builds, but Slycot didn't like it. So if you're having trouble, try the latest numpy and scipy version.
 
 # Conclusion
 The `control` library requires scipy and numpy, which are big dependencies, making the final Docker image over 700MB. However, it's very likely we could optimize the Dockerfile further and shrink the container size. A follow-up article will be posted when I figure that out.
+[]: 
