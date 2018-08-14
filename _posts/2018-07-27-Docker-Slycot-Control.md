@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Dockerfile, Slycot and Control"
+title: "A Docker container for Slycot and python-control"
 date: "2018-07-27"
 author: ["Siang Lim"]
 ---
