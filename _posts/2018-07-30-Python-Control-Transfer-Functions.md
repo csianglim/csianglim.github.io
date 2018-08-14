@@ -16,7 +16,7 @@ G(s) = \frac{1}{0.5s^2+0.5s+1}
 $$
 
 Then we can do:
-```
+```python
 T = np.linspace(0,20,100)
 U = np.zeros(len(T))
 U[10:50] = 1 # Our control action U
@@ -40,7 +40,7 @@ To do this, we could use a Python generator and the `yield` statement:
 4. Take in new control actions at $$t+1$$, repeat.
 
 Here's the implementation:
-```
+```python
 def TFGenerator():
     # Initial values
     G_s = control.tf([1.0],[0.5,0.5,1])
@@ -55,13 +55,13 @@ def TFGenerator():
 ```
 
 We'll initialize the generator using:
-```
+```python
 tf = TFGenerator()
 t, yout = tf.send(None)
 ```
 
 And now we can start sending control actions, step by step:
-```
+```python
 t, yout = tf.send(0)
 t, yout = tf.send(0)
 t, yout = tf.send(1)
