@@ -73,9 +73,25 @@ h2{
 	color: #ccc;
 }
 
-.center-image
+figure
 {
-    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: block;
 }
 
+figcaption{
+	font-style: italic;
+}
+
+.small-image img{
+	max-width: 10%;
+}
+
+.medium-image img{
+	max-width: 50%;
+}
+
+.large-image img{
+	max-width: 90%;
+}
