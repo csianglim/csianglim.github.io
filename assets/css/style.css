@@ -16,12 +16,23 @@ h3{
 	font-size: 1.35em;
 }
 
-.no-btm-margin{
-	margin-bottom: 0;
+.project-authors{
+	color: #222;
+	font-size: 0.8em;
+	text-decoration: underline;
 }
 
-.lighter {
-	color: #555;
+.project-title{
+	font-size: 1.2em;
+}
+
+.project-description{
+	font-size: 0.9em;
+	color: #222;
+}
+
+.project-url{
+	font-size: 0.8em;
 }
 
 .nav hr{
