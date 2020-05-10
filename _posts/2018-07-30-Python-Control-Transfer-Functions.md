@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Simulating real-time process outputs"
+title: "Simulating Real-time Process Outputs"
 date: "2018-07-30"
 author: ["Siang Lim"]
 ---

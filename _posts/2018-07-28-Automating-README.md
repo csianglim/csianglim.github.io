@@ -1,9 +1,11 @@
 ---
 layout: blog
-title: "Automatically update README.md with Travis-CI"
+title: "Automatically Update README.md with Travis-CI"
 date: "2018-07-28"
 author: ["Siang Lim"]
 ---
+
+**Update: As of May 2020, a better solution is to switch from Travis Ci to the recently launched [GitHub Actions](https://github.com/features/actions)**
 
 While working on content for the [UBC OpenChemE Initiative](https://opencheme.github.io), I got tired of manually updating the README.md file with new notebooks and decided to look for a more elegant solution. 
 
