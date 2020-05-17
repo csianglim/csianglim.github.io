@@ -11,6 +11,6 @@ I graduated with a degree in [Chemical Engineering](http://chbe.ubc.ca) from UBC
 
 In my spare time, I develop open source software and academic resources for the [UBC OpenChemE](https://opencheme.github.io/) initiative. In my recent past, I worked on energy engineering projects at [FortisBC](https://www.fortisbc.com/) and collaborated with UBC researchers, including the [BioFoundry](http://www.biofoundry.ca/), the [MathBio Group](https://www.math.ubc.ca/~jfeng/) and the [DAIS lab](http://dais.chbe.ubc.ca) on computational engineering and web development [projects](/portfolio).
 
-I like working on technical puzzles. I am most interested in challenges at the intersection of chemical & biological engineering, software development and computer science. Feel free to [contact me](/contact) by email or add me on [LinkedIn](https://www.linkedin.com/in/c-siang-lim-eit-98535048).
+I like working on technical puzzles. I am most interested in challenges at the intersection of chemical & biological engineering, software development and computer science.
 
 My email is [siang@alumni.ubc.ca](mailto: siang@alumni.ubc.ca). I'm also on [LinkedIn](https://www.linkedin.com/in/csianglim/){:target='_blank'} and [GitHub](https://github.com/csianglim){:target='_blank'}.
